@@ -52,11 +52,8 @@ class StringDisplay extends Component {
       },
     })
       .then((response) => response.json())
-      .then((json) => console.log(json));
-
-    this.setState({
-      saved: true,
-    });
+      .then((json) => console.log(json))
+      .then(() => this.setState({ saved: true }));
   }, 2000);
 
   render() {
