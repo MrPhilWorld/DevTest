@@ -1,0 +1,46 @@
+.saved,
+.saving {
+  border: 2px solid;
+  border-radius: 5px;
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.saved p,
+.saving p {
+  margin: 10px;
+}
+
+.saved {
+  border-color: greenyellow;
+}
+
+.saved p {
+  color: greenyellow;
+}
+
+.saving {
+  border-color: orange;
+}
+
+.saving p {
+  color: orange;
+}
+
+.linesContainer {
+  background-color: #49515f;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.line {
+  font-size: 18px;
+  cursor: grab;
+  border: 0.5px solid transparent;
+  padding: 2px;
+}
+
+.line:hover {
+  border-color: white;
+}
