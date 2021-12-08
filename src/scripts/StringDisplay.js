@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import debounce from "lodash.debounce";
-import "./StringDisplay.css";
+import "../stylesheets/StringDisplay.css";
 
 const regex = /(.{1,80}\b|.{80})/g;
 
