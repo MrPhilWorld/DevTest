@@ -3,7 +3,9 @@ import "../stylesheets/App.css";
 import StringDisplay from "./StringDisplay";
 
 const message =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eleifend, nunc in sodales fringilla, nulla orci purus, sit amet luctus nunc a diam. Ut orci metus, lacinia nec sodales nec, tempus vitae risus. Phasellus maximus fringilla suscipit. Nulla lobortis arcu vitae arcu tempor, a auctor risus imperdiet. Vivamus id auctor orci. Praesent nisl tortor, mollis id felis at, blandit pulvinar felis. In ultricies massa sit amet posuere finibus. Nam egestas ut purus in finibus. Suspendisse quam tortor, imperdiet in gravida a, ultricies vitae est. Curabitur bibendum sapien leo, eget viverra diam ultrices blandit. Nam porttitor quam vel nisi condimentum iaculis. Proin sodales risus sit amet eros pretium fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec tristique auctor est, nec facilisis nisl ultricies quis.";
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus, risus a imperdiet lobortis, lorem ligula hendrerit felis, ac tincidunt leo turpis quis velit. Ut sit amet tristique sapien, non viverra tortor. Donec vitae ante quis diam rutrum rhoncus id sed lacus. Nam sapien neque, ultricies a dui id, iaculis feugiat tellus. Pellentesque viverra id erat sit amet blandit. Duis efficitur sodales nisl eget feugiat. Vivamus non nisi non orci tincidunt lacinia nec in turpis. Nullam ornare, neque eu efficitur porttitor, ex sapien tincidunt nisl, vitae posuere purus diam eu augue. Aliquam ultrices ex in fermentum consectetur. Morbi molestie odio quis purus aliquam feugiat. Sed vitae nulla molestie, imperdiet ipsum a, rhoncus nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut molestie rutrum libero at consequat. Praesent feugiat mi erat, sit amet eleifend eros finibus ac.";
+
+const length = 80;
 
 function App() {
   return (
@@ -11,7 +13,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Frontend Developer Test</h1>
-        <StringDisplay length={message} />
+        <StringDisplay message={message} length={length} />
       </header>
     </div>
   );
