@@ -59,23 +59,35 @@ class StringDisplay extends Component {
   render() {
     return (
       <div>
-        <div className={this.state.saved ? "saved" : "saving"}>
-          <p>{this.state.saved ? "Saved" : "Saving..."}</p>
-        </div>
-        <div className="linesContainer">
-          {this.state.lines.map((line, i) => (
-            <div
-              className="line"
-              key={line}
-              draggable
-              onDragOver={(e) => this.onDragOver(e)}
-              onDragStart={(e) => this.onDragStart(e, i)}
-              onDrop={(e) => this.onDrop(e, i)}
-            >
-              {line}
-            </div>
-          ))}
-        </div>
+        {this.renderSaveStatus()}
+        {this.renderLines()}
+      </div>
+    );
+  }
+
+  renderSaveStatus() {
+    return (
+      <div className={this.state.saved ? "saved" : "saving"}>
+        <p>{this.state.saved ? "Saved" : "Saving..."}</p>
+      </div>
+    );
+  }
+
+  renderLines() {
+    return (
+      <div className="linesContainer">
+        {this.state.lines.map((line, i) => (
+          <div
+            className="line"
+            key={line}
+            draggable
+            onDragOver={(e) => this.onDragOver(e)}
+            onDragStart={(e) => this.onDragStart(e, i)}
+            onDrop={(e) => this.onDrop(e, i)}
+          >
+            {line}
+          </div>
+        ))}
       </div>
     );
   }
