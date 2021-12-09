@@ -9,6 +9,7 @@
 .App-logo {
   height: 20vmin;
   pointer-events: none;
+  user-select: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -25,6 +26,10 @@
   justify-content: center;
   color: white;
   padding-bottom: 30px;
+}
+
+.App-header h1 {
+  user-select: none;
 }
 
 @keyframes App-logo-spin {
